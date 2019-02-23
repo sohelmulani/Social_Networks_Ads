@@ -48,7 +48,11 @@ class Encoder(object):
         return(x)
         
     def one_hot_encoder(self,y,cf):
+<<<<<<< HEAD
         ohe=OneHotEncoder(categorical_features=[cf])
+=======
+        ohe=OneHotEncoder(categorical_features=cf)
+>>>>>>> f9b6072fb74533d2d708b6ec5f0432f218a103ac
         y=ohe.fit_transform(y).toarray()
         return(y)
         
